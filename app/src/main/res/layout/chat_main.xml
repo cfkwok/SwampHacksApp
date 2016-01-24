@@ -5,38 +5,9 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/imageView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="firstName"
+        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/partnerName" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="ageRange"
-        android:layout_below="@+id/partnerName"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:id="@+id/partnerAge" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="partnerDistance"
-        android:layout_below="@+id/partnerAge"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:id="@+id/partDist" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,8 +16,7 @@
         android:text="countClock"
         android:id="@+id/countClock"
         android:layout_below="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -54,28 +24,26 @@
         android:text="moreTime"
         android:id="@+id/moreTime"
         android:layout_below="@+id/countClock"
-        android:layout_alignRight="@+id/countClock"
-        android:layout_alignEnd="@+id/countClock" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="playGame"
-        android:layout_alignBottom="@+id/moreTime"
-        android:layout_toRightOf="@+id/moreTime"
-        android:layout_toEndOf="@+id/moreTime"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:id="@+id/requestGame" />
+        android:id="@+id/requestGame"
+        android:layout_above="@+id/chatBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="tease!"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/requestGame"
-        android:layout_alignStart="@+id/requestGame"
-        android:id="@+id/teaseUnblur" />
+        android:id="@+id/teaseUnblur"
+        android:layout_below="@+id/countClock"
+        android:layout_alignRight="@+id/countClock"
+        android:layout_alignEnd="@+id/countClock" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -85,12 +53,13 @@
         android:layout_alignParentStart="true"
         android:id="@+id/chatBox" />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/scrollView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="Edit Text"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
 
 </RelativeLayout>
