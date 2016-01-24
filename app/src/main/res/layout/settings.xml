@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:id="@+id/widget">
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@android:drawable/ic_menu_preferences" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="64dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Settings"
+            android:id="@+id/settingLabel"
+            android:layout_gravity="right|center_vertical"
+            android:textSize="60px"
+            android:textColor="#000000"
+            android:gravity="center_horizontal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp" >
+
+        <Switch
+            android:layout_width="338dp"
+            android:layout_height="match_parent"
+            android:text="Show Notification"
+            android:id="@+id/switch2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:weightSum="1">
+
+        <Switch
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:id="@+id/switch1"
+            android:layout_weight="0.77"
+            android:text="I want to be Teazed!" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Save &amp; Go Back"
+            android:id="@+id/goback"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:clickable="true"
+            android:enabled="true"
+            android:textColor="#000000"
+            android:textSize="50px"
+            android:background="#dcdcdc"
+            android:onClick="buttonOnClickS" />
+    </LinearLayout>
+
+</LinearLayout>

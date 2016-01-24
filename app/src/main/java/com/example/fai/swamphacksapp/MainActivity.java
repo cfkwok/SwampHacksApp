@@ -1,7 +1,10 @@
 package com.example.fai.swamphacksapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,9 +34,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void buttonOnClick(View v)
+    public void buttonOnClickM(View v)
     {
-
+        switch(v.getId())
+        {
+            case R.id.setting:
+                Intent settingIntent = new Intent(MainActivity.this, Settings.class);
+                startActivity(settingIntent);
+        }
     }
 
     public void imageOnClick(View v)

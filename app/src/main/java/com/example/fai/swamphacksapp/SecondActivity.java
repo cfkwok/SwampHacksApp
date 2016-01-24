@@ -60,6 +60,11 @@ public class SecondActivity extends AppCompatActivity {
                 File imageFile = new File(pictureDirectory, pictureName);
                 Uri pictureUri = Uri.fromFile(imageFile);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, pictureUri);
+                break;
+            case R.id.save:
+                Intent backIntent = new Intent(SecondActivity.this, MainActivity.class);
+                startActivity(backIntent);
+                break;
         }
     }
 

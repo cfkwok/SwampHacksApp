@@ -8,6 +8,9 @@
         android:label="TeazeMe"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-feature android:name="android.permission.CAMERA" android:required="true"/>
         <activity
             android:name=".MainActivity"
             android:label="TeazeMe"
@@ -19,7 +22,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity" >
+            android:name=".SecondActivity"
+            android:label = "Change Profile Photo" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label = "Settings">
         </activity>
         <!--><activity
             android:name=".SecondActivity"
