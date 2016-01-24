@@ -1,5 +1,6 @@
 package com.example.fai.swamphacksapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,22 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void buttonOnClick(View v)
+    {
+
+    }
+
+    public void imageOnClick(View v)
+    {
+        switch (v.getId())
+        {
+            case R.id.userProfilePhoto:
+                Intent i = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(i);
+                break;
+        }
     }
 
     @Override
